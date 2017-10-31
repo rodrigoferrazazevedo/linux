@@ -1098,6 +1098,11 @@ F:	arch/arm/mach-*/
 F:	arch/arm/plat-*/
 T:	git git://git.kernel.org/pub/scm/linux/kernel/git/arm/arm-soc.git
 
+ARM/ACTIONS SEMI SoC CLOCK SUPPORT
+L:	Manivannan Sadhasivam <manivannan.sadhasivam@linaro.org>
+S:	Maintained
+F:	drivers/clk/owl/
+
 ARM/ACTIONS SEMI ARCHITECTURE
 M:	Andreas Färber <afaerber@suse.de>
 L:	linux-arm-kernel@lists.infradead.org (moderated for non-subscribers)
