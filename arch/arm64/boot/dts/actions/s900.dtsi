@@ -5,6 +5,7 @@
  */
 
 #include <dt-bindings/interrupt-controller/arm-gic.h>
+#include <dt-bindings/clock/actions,s900-clock.h>
 
 / {
 	compatible = "actions,s900";
@@ -86,6 +87,24 @@
 		compatible = "fixed-clock";
 		clock-frequency = <24000000>;
 		#clock-cells = <0>;
+	};
+
+	losc: losc {
+		compatible = "fixed-clock";
+		clock-frequency = <32768>;
+		#clock-cells = <0>;
+	};
+
+	diff_24M: diff_24M {
+		compatible = "fixed-clock";
+		clock-frequency = <24000000>;
+		#clock-cells = <0>;
+	};
+
+	clock: clock-controller@e0160000 {
+		compatible = "actions,s900-clock";
+		reg = <0 0xe0160000 0 0x1000>;
+		#clock-cells = <1>;
 	};
 
 	soc {
