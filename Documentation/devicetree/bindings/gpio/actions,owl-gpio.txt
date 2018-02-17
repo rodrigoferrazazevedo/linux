@@ -1,0 +1,15 @@
+* Actions Semi OWL GPIO controller bindings
+
+- compatible      : Should be "actions,s900-gpio"
+- reg             : Address and range of the GPIO controller registers.
+- gpio-controller : Marks the device node as a GPIO controller.
+- #gpio-cells     : Should be <2>. The first cell is the gpio number and
+                    the second cell is used to specify optional parameters.
+
+Example:
+       gpio: gpio@e01b0000 {
+               compatible = "actions,s900-gpio";
+               reg = <0x0 0xe01b0000 0x0 0x1000>;
+               gpio-controller;
+               #gpio-cells = <2>;
+       };
