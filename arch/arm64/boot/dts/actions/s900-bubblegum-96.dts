@@ -14,6 +14,12 @@
 
 	aliases {
 		serial5 = &uart5;
+		gpio0 = &gpioa;
+		gpio1 = &gpiob;
+		gpio2 = &gpioc;
+		gpio3 = &gpiod;
+		gpio4 = &gpioe;
+		gpio5 = &gpiof;
 	};
 
 	chosen {
