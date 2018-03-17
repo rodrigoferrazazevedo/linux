@@ -6,3 +6,4 @@ clk-owl-y			+= owl-mux.o
 clk-owl-y			+= owl-divider.o
 clk-owl-y			+= owl-factor.o
 clk-owl-y			+= owl-fixed-factor.o
+clk-owl-y			+= owl-composite.o
